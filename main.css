@@ -1,18 +1,16 @@
 
 
-
-/* .test-container {
+.contacts {
   padding: 30px;
   margin: 0 auto;
-  background-color: aqua;
 }
-@media screen and (min-width: 768px) {
-  .test-container {
+/* @media screen and (min-width: 768px) {
+  .contacts  {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .test-container {
+  .contacts  {
     width: 1200px;
     background-image: url(./images/section-bg-lg.jpg);
   }
@@ -83,8 +81,16 @@ body {
 }
 
 .contacts {
+
   padding: 115px;
+  margin: 0 auto;
   background: #FFF5F6;
+}
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px;
+  /* width: calc(100% / 3 - 60px); */
 }
 .contacts__item {
   width: 330px;
@@ -99,6 +105,11 @@ body {
 }
 .contacts__list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* margin: -30px; */
+  /* width: calc(100% / 3 - 60px); */
 }
 /* .contacts__item:not(:last-child) {
   margin-bottom: 30px;

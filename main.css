@@ -1,22 +1,5 @@
 
 
-.contacts {
-  padding: 30px;
-  margin: 0 auto;
-}
-/* @media screen and (min-width: 768px) {
-  .contacts  {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts  {
-    width: 1200px;
-    background-image: url(./images/section-bg-lg.jpg);
-  }
-} */
-
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -81,11 +64,12 @@ body {
 }
 
 .contacts {
-
+  width: 1280px;
   padding: 115px;
   margin: 0 auto;
   background: #FFF5F6;
 }
+
 .contacts__list {
   display: flex;
   flex-wrap: wrap;

@@ -91,7 +91,6 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-
   padding: 50px 44px 62px 44px;
 }
 
@@ -128,9 +127,9 @@ body {
   color: #907E82;
   margin-bottom: 32px;
 }
-.contacts__schedule-list {
-    /* padding: 30px; */
-}
+/* .contacts__schedule-list {
+    padding: 30px;
+} */
 .contacts__schedule-list::before {
   display: block;
   content: '';
@@ -142,12 +141,12 @@ body {
   content: '';
   border: 1px solid #E1E1E1;
 }
-.contacts__schedule-item {
-  /* padding: 30px 0; */
-}
-.contacts__schedule-item:first-child {
-  /* padding-bottom: 30px; */
-}
+/* .contacts__schedule-item {
+  padding: 30px 0;
+} */
+/* .contacts__schedule-item:first-child {
+  padding-bottom: 30px;
+} */
 .contacts__schedule-dates {
   font-weight: 500;
   font-size: 16px;
@@ -177,9 +176,6 @@ body {
   line-height: 1.8;
   color: #907E82;
 }
-
-
-
 
 
 /*# sourceMappingURL=main.css.map */

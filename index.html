@@ -5,39 +5,63 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>test</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./main.css" />
     </head>
     <body>
-        <div class="test-container">
-            <ul class="flex-list list">
-                <li class="flex-item">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, rerum suscipit velit obcaecati unde praesentium
-                    labore! Ad aliquid maxime blanditiis! Quae ullam quos
-                    repudiandae libero aliquam porro. Qui, quidem aliquid?
-                </li>
-                <li class="flex-item">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, rerum suscipit velit obcaecati unde praesentium
-                    labore! Ad aliquid maxime blanditiis! Quae ullam quos
-                    repudiandae libero aliquam porro. Qui, quidem aliquid?
-                </li>
-                <li class="flex-item">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, rerum suscipit velit obcaecati unde praesentium
-                    labore! Ad aliquid maxime blanditiis! Quae ullam quos
-                    repudiandae libero aliquam porro. Qui, quidem aliquid?
-                </li>
-                <li class="flex-item">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, rerum suscipit velit obcaecati unde praesentium
-                    labore! Ad aliquid maxime blanditiis! Quae ullam quos
-                    repudiandae libero aliquam porro. Qui, quidem aliquid?
-                </li>
-                <li class="flex-item">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magni, rerum suscipit velit obcaecati unde praesentium
-                    labore! Ad aliquid maxime blanditiis! Quae ullam quos
-                    repudiandae libero aliquam porro. Qui, quidem aliquid?
+        <!-- <script>
+            let d = new Date();
+            alert("Today's date is " + d);
+        </script> -->
+        <div class="contacts">
+            <h2 class="visually-hidden">Contacts</h2>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <h3 class="contacts__header">Cafe</h3>
+                    <p class="contacts__title">Chicago</p>
+                    <p class="contacts__text">
+                        Fusce ut velit laoreet, tempus arcu molestie vulputate
+                    </p>
+                    <ul class="contacts__schedule-list">
+                        <li class="contacts__schedule-item">
+                            <p class="contacts__schedule-dates">
+                                Monday - Friday
+                            </p>
+                            <p class="contacts__schedule-time">
+                                06:00 AM - 10:00 PM
+                            </p>
+                        </li>
+                        <li class="contacts__schedule-item">
+                            <p class="contacts__schedule-dates">
+                                Saturday - Sunday
+                            </p>
+                            <p class="contacts__schedule-time">
+                                08:00 AM - 16:00 PM
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="contacts__details">
+                        <a
+                            class="contacts__details-phone link"
+                            href="tel:+610383766284"
+                            >+61(0) 383 766 284
+                        </a>
+                        <a
+                            class="contacts__details-mail link"
+                            href="mailto:noreply@envato.com"
+                            >noreply@envato.com</a
+                        >
+                    </div>
                 </li>
             </ul>
         </div>

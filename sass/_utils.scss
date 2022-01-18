@@ -1,0 +1,66 @@
+@mixin mq($range) {
+      $mobile: 480px;
+    $tablet: 768px;
+    $desktop: 1280px;
+  
+    @if $range == mobile-only {
+      @media (max-width: #{$tablet - 0.02} ) {
+        @content;
+      }
+    } @else if $range == mobile {
+      @media (min-width: $mobile) {
+        @content;
+      }
+    } @else if $range == tablet-only {
+      @media (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+        @content;
+      }
+    } @else if $range == tablet {
+      @media (min-width: $tablet) {
+        @content;
+      }
+    } @else if $range == desktop {
+      @media (min-width: $desktop) {
+        @content;
+      }
+    } @else if $range == not-desktop {
+      @media (max-width: #{$desktop - 0.02}) {
+        @content;
+      }
+    } 
+}
+html {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0px;
+    padding: 0px;
+  }
+  img {
+    display: block;
+  }
+  p {
+    margin: 0px;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif , 'Titan One';
+    background-color: var(--primary-bg-color);
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a{
+  text-decoration: none;
+  }

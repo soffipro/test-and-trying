@@ -2357,53 +2357,122 @@
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
 
-class User {
-  email;
+// class User {
+//   email;
 
-  constructor(email) {
-    this.email = email;
-  }
+//   constructor(email) {
+//     this.email = email;
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
-class Admin extends User {
-  // Change code below this line
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
   
-  blacklistedEmail = [];
+//   blacklistedEmail = [];
 
-  static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
 
-  constructor({ email, accessLevel }) {
-    super(email);
-    this.accessLevel = accessLevel;
-  }
-  blacklist(email){
-    this.blacklistedEmail.push(email);
-  }
-  isBlacklisted(email){
-    return this.blacklistedEmail.includes(email)
-  }
-  // Change code above this line
-}
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+//   blacklist(email){
+//     this.blacklistedEmail.push(email);
+//   }
+//   isBlacklisted(email){
+//     return this.blacklistedEmail.includes(email)
+//   }
+//   // Change code above this line
+// }
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+
+// const colorPickerOptions = [
+//   { label: 'red', color: '#f44336' },
+//   { label: 'green', color: '#4caf50' },
+//   { label: 'blue', color: '#2196f3' },
+//   { label: 'grey', color: '#607d8b' },
+//   { label: 'pink', color: '#e91e63' },
+//   { label: 'indigo', color: '#3f51b5' },
+// ];
+// console.log(colorPickerOptions);
+
+// const option = colorPickerOptions[0];
+// const colorPickerContainerEl = document.querySelector('.js-color-picker');
+
+// const elements = colorPickerOptions.map(option => {
+//   const buttonEl = document.createElement('button');
+//   buttonEl.type = 'button';
+//   buttonEl.classList.add('color-picker-option');
+//   buttonEl.textContent = option.label;
+//   buttonEl.style.backgroundColor = option.color;
+//   console.log(buttonEl)
+//   return buttonEl;
+// })
+
+// console.log(elements);
+// colorPickerContainerEl.append(...elements);
+// const elements = [];
+
+// for (let i = 0; i < colorPickerOptions.length; i += 1) {
+
+//   const option = colorPickerOptions[i];
+//   console.log(option);
+//   const buttonEl = document.createElement('button');
+//   buttonEl.type = 'button';
+//   buttonEl.classList.add('color-picker-option');
+//   buttonEl.textContent = option.label;
+//   buttonEl.style.backgroundColor = option.color;
+//   console.log(buttonEl)
+  
+//   elements.push(buttonEl);
+// }
+const colorPickerOptions = [
+  { label: 'red', color: '#f44336' },
+  { label: 'green', color: '#4caf50' },
+  { label: 'blue', color: '#2196f3' },
+  { label: 'grey', color: '#607d8b' },
+  { label: 'pink', color: '#e91e63' },
+  { label: 'indigo', color: '#3f51b5' },
+];
+// console.log(colorPickerOptions);
+
+const colorPickerContainerEl = document.querySelector('.js-color-picker');
+
+
+const createColorPickerOptions = (option) => {
+  return option.map(option => {
+    const buttonEl = document.createElement('button');
+    buttonEl.type = 'button';
+    buttonEl.classList.add('color-picker-option');
+    buttonEl.textContent = option.label;
+    buttonEl.style.backgroundColor = option.color;
+    console.log(buttonEl)
+    return buttonEl;
+  });
+};
+
+const elements = createColorPickerOptions(colorPickerOptions);
+colorPickerContainerEl.append(...elements);

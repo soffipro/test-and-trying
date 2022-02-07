@@ -2449,30 +2449,227 @@
   
 //   elements.push(buttonEl);
 // }
-const colorPickerOptions = [
-  { label: 'red', color: '#f44336' },
-  { label: 'green', color: '#4caf50' },
-  { label: 'blue', color: '#2196f3' },
-  { label: 'grey', color: '#607d8b' },
-  { label: 'pink', color: '#e91e63' },
-  { label: 'indigo', color: '#3f51b5' },
-];
-// console.log(colorPickerOptions);
+// const colorPickerOptions = [
+//   { label: 'red', color: '#f44336' },
+//   { label: 'green', color: '#4caf50' },
+//   { label: 'blue', color: '#2196f3' },
+//   { label: 'grey', color: '#607d8b' },
+//   { label: 'pink', color: '#e91e63' },
+//   { label: 'indigo', color: '#3f51b5' },
+// ];
+// // console.log(colorPickerOptions);
 
-const colorPickerContainerEl = document.querySelector('.js-color-picker');
+// const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
 
-const createColorPickerOptions = (option) => {
-  return option.map(option => {
-    const buttonEl = document.createElement('button');
-    buttonEl.type = 'button';
-    buttonEl.classList.add('color-picker-option');
-    buttonEl.textContent = option.label;
-    buttonEl.style.backgroundColor = option.color;
-    console.log(buttonEl)
-    return buttonEl;
-  });
-};
+// const createColorPickerOptions = (option) => {
+//   return option.map(option => {
+//     const buttonEl = document.createElement('button');
+//     buttonEl.type = 'button';
+//     buttonEl.classList.add('color-picker-option');
+//     buttonEl.textContent = option.label;
+//     buttonEl.style.backgroundColor = option.color;
+//     console.log(buttonEl)
+//     return buttonEl;
+//   });
+// };
 
-const elements = createColorPickerOptions(colorPickerOptions);
-colorPickerContainerEl.append(...elements);
+// const elements = createColorPickerOptions(colorPickerOptions);
+// colorPickerContainerEl.append(...elements);
+
+// const saveBtn = document.querySelector('.editor button[data-action="save"]');
+// const closeBtn = document.querySelector('.editor button[data-action="close"]');
+
+// console.log(saveBtn.dataset.action); //save
+// console.log(closeBtn.dataset.action); //close
+
+// const dishes = document.querySelectorAll(".dishes > li");
+// dishes.forEach((dish) => {
+//   console.log(dish.dataset.id);
+// });
+// const heading = document.createElement("h1");
+// console.log(heading); // <h1></h1>
+
+// heading.textContent = "This is a heading";
+// console.log(heading); // <h1>This is a heading</h1>
+
+// const image = document.createElement("img");
+// image.src = "https://placeimg.com/640/480/nature";
+// image.alt = "Nature";
+// console.log(image); // <img src="https://placeimg.com/640/480/nature" alt="Nature" />
+
+
+// wrapperRef.style.display = 'flex';
+// wrapperRef.style.cssText = `display:flex;`
+// console.log(wrapperRef);
+
+// const firstPRef = wrapperRef.querySelector('p');
+// // console.log(firstPRef);
+
+// const secondPref = wrapperRef.querySelector('#elem');
+// // console.log(secondPref);
+
+// const thirdPref = wrapperRef.querySelector('.js-first-elem')
+// // console.log(thirdPref);
+
+// const fourthPref = wrapperRef.querySelector('[title="Hello"]')
+// // console.log(fourthPref);
+
+// const pRefs = document.querySelectorAll('p')
+// console.log(pRefs);
+// pRefs.forEach(ref=>console.log(ref))
+
+// const paragrafRef = document.querySelector('.wrapper > #elem')
+// console.log(paragrafRef);
+// paragrafRef.classList.add('blue', 'bg-pink');
+// paragrafRef.classList.remove('bg-pink');
+// // console.log(paragrafRef.classList.contains('blue'));
+// console.log(paragrafRef.classList.toggle( 'blue'));
+// console.log(paragrafRef.classList.toggle( 'bg-pink'));
+
+// const wrapperRef = document.querySelector('.wrapper');
+// const elem = document.querySelector('#elem');
+
+// elem.style.backgroundColor = 'aqua';
+// elem.style.border = '3px solid gray';
+// const color = 'pink';
+// elem.style.cssText = `background-color: ${color}`;
+
+// const elem = document.querySelector('.text');
+// console.log(elem.textContent);
+// console.log(elem.tagName)
+// const elems = document.querySelectorAll('.text');
+// console.log(elems);
+// elems.forEach(elem => {
+//   const tag = elem.tagName.toLowerCase();
+//   const text = elem.textContent;
+//   // elem.textContent = `${text} ${tag}`;
+  // elem.textContent += tag;
+// })
+
+// const listRef = document.querySelector('#elem');
+
+// const liRefs = listRef.children;
+// console.log(liRefs)
+
+// const firstLiRef = listRef.firstElementChild;
+
+// const lastLiRef = listRef.lastElementChild;
+
+// const liTitle = firstLiRef.children;
+
+// const liRefArr = [...liRefs];
+// console.log(liRefArr);
+
+// for (const li of liRefArr) {
+//   li.textContent += '!!'
+//   console.log(li)
+// }
+
+// const liMiddleRef = document.querySelector('#middle');
+// console.log(liMiddleRef);
+// liMiddleRef.previousElementSibling.textContent += '!!!!2';
+// liMiddleRef.nextElementSibling.textContent +=' 3333'
+
+// // console.log(listRef);
+// // console.log(firstLiRef);
+// // console.log(lastLiRef);
+// console.log(liTitle);
+
+
+// const middleRef = document.querySelector('#middle');
+
+// middleRef.parentElement.style.backgroundColor = 'aqua';
+
+// middleRef.parentElement.parentElement.style.backgroundColor = 'pink';
+
+// const ul = middleRef.closest('ul');
+
+// const buttons = document.querySelectorAll('button');
+// // console.log(buttons)
+// buttons.forEach(btn => {
+//   // console.log(btn.disabled);
+//   if (btn.disabled) {
+//     btn.disabled = false;
+//   }
+//   console.log(btn.dataset);
+//   if (btn.dataset.value) {
+//     btn.textContent = btn.dataset.value;
+//   }
+//   if (btn.dataset.size) {
+//     btn.style.width = btn.dataset.size + 'px';
+//   }
+// });
+
+// const olRef = document.querySelector('ol');
+// console.log(olRef);
+
+// const newLiRef = document.createElement('li');
+// // console.log(newLiRef);
+
+// newLiRef.textContent = 'soft skils';
+
+// olRef.append(newLiRef);
+// olRef.prepend(newLiRef);
+
+// const title = document.createElement('h4');
+
+// title.textContent= 'plan:'
+// // olRef.before(title)
+// // olRef.after(title);
+
+// console.log()
+
+// const liRefs = olRef.children;
+// const ulRef = document.querySelector('#stack');
+// ulRef.append(...liRefs);
+
+// olRef.remove()
+// ==================== СОЗДАНИЕ ЕЛЕМЕНТОВ И ДОБАВЛЕНИЕ В ДОМ
+
+// const cities = ['paris', 'prague', 'berlin'];
+// const list = document.createElement('ul');
+
+
+
+// const newArr= cities.map(city => {
+//   const liRef = document.createElement('li');
+//   liRef.textContent = city;
+//   return liRef;
+// })
+// console.log(newArr);
+
+// list.append(...newArr);
+// document.body.prepend(list);
+
+// -------------- ЕЩЕ ОДИH СПОСОБ ДОБАВЛЕНИЯ
+
+const users = [
+  {
+    id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    skills: ['ipsum', 'lorem'],
+    gender: 'male',
+    age: 37,
+  }]
+
+const listRef = document.querySelector('#users');
+
+const markup = users.map(({ name, age, eyeColor }) =>
+  `<li>
+    <h2>${name}</h2>
+    <p>age:${age}</p>
+    <span>eye color:</span>
+    <span style="background-color: blue"></span>
+</li>`);
+
+console.log(markup)
+// console.log(listRef)
+listRef.insertAdjacentHTML('beforeend', markup.join(''));
+
+// console.log(listRef.innerHTML)
